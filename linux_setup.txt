@@ -5,6 +5,9 @@
 # set windows key for menu map command: xfce4-popup-whiskermenu
 # set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
 
+# tailscale #todo
+
+
 # notepadqq
 sudo apt-get update
 sudo apt install notepadqq
@@ -49,13 +52,18 @@ sudo snap install pycharm-community --classic
 # spotify
 snap install spotify
 
-# strechly # todo ???
+# strechly
+sudo snap install stretchly
 
 # time tracker # todo https://alternativeto.net/software/manictime/?platform=linux???
 
-# bitwarden # todo
+# bitwarden
+sudo snap install bitwarden
+
 
 ## install software (heavy) ##
+
+# word??? # todo
 
 # qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
 sudo apt install gnupg software-properties-common
@@ -72,7 +80,7 @@ sudo apt-get update
 sudo apt install inkscape
 
 
-# configure rclone 
+# configure rclone see admin support
 
 
 
