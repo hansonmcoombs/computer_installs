@@ -1,0 +1,73 @@
+ #todo check iy sll eotkdworks
+
+##  install software (light) ##
+
+# set windows key for menu map command: xfce4-popup-whiskermenu
+# set shortcut for xfrun4 to ctrl+alt+shift+l (to allow pycharm refactor)
+
+# notepadqq
+sudo apt-get update
+sudo apt install notepadqq
+
+# chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+
+# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
+bash Miniconda3-py39_4.10.3-Linux-x86_64.sh
+
+# rclone
+sudo apt install curl
+curl https://rclone.org/install.sh | sudo bash
+
+#tmux
+sudo apt install tmux
+
+
+# git and configure github
+sudo apt install git
+git config --global user.name #####
+git config --global user.email #####
+
+# Establish ssh key connection to github passcode in bitwarden
+# https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#
+
+
+## install software (medium) ##
+
+# libre office
+# pre-installed on libreoffice sudo apt install libreoffice
+
+# pycharm
+sudo snap install pycharm-community --classic
+
+# spotify
+snap install spotify
+
+# strechly # todo ???
+
+# time tracker # todo https://alternativeto.net/software/manictime/?platform=linux???
+
+## install software (heavy) ##
+
+# qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
+sudo apt install gnupg software-properties-common
+wget -qO - https://qgis.org/downloads/qgis-2021.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+sudo add-apt-repository "deb https://qgis.org/ubuntu $(lsb_release -c -s) main"
+sudo apt update
+sudo apt install qgis qgis-plugin-grass
+
+# inkscape
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt-get update
+sudo apt install inkscape
+
+
+# configure rclone 
+
+
+
