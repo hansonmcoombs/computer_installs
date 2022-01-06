@@ -3,7 +3,7 @@
 ##  install software (light) ##
 
 # set windows key for menu map command: xfce4-popup-whiskermenu
-# set shortcut for xfrun4 to ctrl+alt+shift+l (to allow pycharm refactor)
+# set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
 
 # notepadqq
 sudo apt-get update
@@ -17,6 +17,9 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
 bash Miniconda3-py39_4.10.3-Linux-x86_64.sh
+
+# 7-zip
+sudo apt-get install p7zip-full
 
 # rclone
 sudo apt install curl
@@ -49,6 +52,8 @@ snap install spotify
 # strechly # todo ???
 
 # time tracker # todo https://alternativeto.net/software/manictime/?platform=linux???
+
+# bitwarden # todo
 
 ## install software (heavy) ##
 
