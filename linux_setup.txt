@@ -5,8 +5,12 @@
 # set windows key for menu map command: xfce4-popup-whiskermenu
 # set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
 
-# tailscale #todo
-
+# tailscale
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+sudo apt-get update
+sudo apt-get install tailscale
+# ~$ tailscale status to get list of tailscale ip addresses
 
 # notepadqq
 sudo apt-get update
@@ -15,7 +19,6 @@ sudo apt install notepadqq
 # chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-
 
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
@@ -31,7 +34,6 @@ curl https://rclone.org/install.sh | sudo bash
 #tmux
 sudo apt install tmux
 
-
 # git and configure github
 sudo apt install git
 git config --global user.name #####
@@ -39,7 +41,6 @@ git config --global user.email #####
 
 # Establish ssh key connection to github passcode in bitwarden
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#
-
 
 ## install software (medium) ##
 
@@ -56,6 +57,9 @@ snap install spotify
 sudo snap install stretchly
 
 # time tracker # todo https://alternativeto.net/software/manictime/?platform=linux???
+# look into activitywatch https://docs.activitywatch.net/en/latest/getting-started.html#usage
+# this is working pretty well, but does not allow selecting info, tagging and summary of tags 
+# I should be able to write something pretty quick for this though and other people would like it!
 
 # bitwarden
 sudo snap install bitwarden
