@@ -5,6 +5,12 @@
 # set windows key for menu map command: xfce4-popup-whiskermenu
 # set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
 
+# screen recording tool
+sudo wget -q -O - https://screenrec.com/download/pub.asc | sudo apt-key add -
+sudo add-apt-repository 'deb https://screenrec.com/download/ubuntu stable main'
+sudo apt update
+sudo apt install screenrec
+
 # tailscale
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
