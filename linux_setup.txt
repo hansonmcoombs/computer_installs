@@ -101,12 +101,7 @@ sudo apt install inkscape
 # configure rclone see admin support
 
 
-## add to auto start (still testing)
-# .config/autostart
-# add 
-## [Desktop Entry]
-## Name=Stretchly
-## Exec=stretchly
-## Type=Application
-## X-GNOME-Autostart-enabled=true
+## add to auto start
+# copy .desktop file to autostart dir or via the gui session and startup.
+
 
