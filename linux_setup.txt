@@ -58,7 +58,7 @@ sudo apt install screenrec
 sudo apt-get update
 sudo snap install zoom-client
 
-# teams
+# teams (use in browser only with teams screenshare chrome extension
 
 
 # pycharm
@@ -101,4 +101,12 @@ sudo apt install inkscape
 # configure rclone see admin support
 
 
+## add to auto start (still testing)
+# .config/autostart
+# add 
+## [Desktop Entry]
+## Name=Stretchly
+## Exec=stretchly
+## Type=Application
+## X-GNOME-Autostart-enabled=true
 
