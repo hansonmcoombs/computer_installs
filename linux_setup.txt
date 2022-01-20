@@ -5,6 +5,9 @@
 # set windows key for menu map command: xfce4-popup-whiskermenu
 # set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
 
+# curl
+sudo apt install curl
+
 # tailscale
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
@@ -35,6 +38,9 @@ curl https://rclone.org/install.sh | sudo bash
 #tmux
 sudo apt install tmux
 
+# bitwarden
+sudo snap install bitwarden
+
 # git and configure github
 sudo apt install git
 git config --global user.name #####
@@ -44,6 +50,10 @@ git config --global user.email #####
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#
 
 ## install software (medium) ##
+
+# pycharm
+sudo snap install pycharm-community --classic
+# todo manage preferences here?
 
 # libre office
 # pre-installed on libreoffice sudo apt install libreoffice
@@ -75,8 +85,6 @@ sudo snap install stretchly
 # this is working pretty well, but does not allow selecting info, tagging and summary of tags 
 # I should be able to write something pretty quick for this though and other people would like it!
 
-# bitwarden
-sudo snap install bitwarden
 
 
 ## install software (heavy) ##
