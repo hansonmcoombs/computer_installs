@@ -1,5 +1,9 @@
  #todo check iy sll eotkdworks
 
+General linux notes
+# bluetooth microphone does not work well on linux, best practice is to use the webcam mic while at home...
+
+
 ##  install software (light) ##
 
 # set windows key for menu map command: xfce4-popup-whiskermenu
@@ -14,7 +18,6 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/a
 sudo apt-get update
 sudo apt-get install tailscale
 # ~$ tailscale status to get list of tailscale ip addresses
-
 
 # notepadqq
 sudo apt-get update
@@ -41,16 +44,26 @@ sudo apt install tmux
 # bitwarden
 sudo snap install bitwarden
 
-# git and configure github
+# git
 sudo apt install git
-git config --global user.name #####
-git config --global user.email #####
 
-# Establish ssh key connection to github passcode in bitwarden
-# https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#
+# remote desktop options
+# ssh
+sudo apt install openssh-server
+sudo ufw allow ssh
+# to connect ssh username@ip_address
+# client: remmina
+sudo snap install remmina
+# server
+# x2go # todo follow up (did not get working)
+sudo apt-get install x2goserver x2goserver-xsession
+# rdp # todo follow up on ipv4/6 issue, I think this needs ipv6...
+sudo apt install xrdp
+sudo systemctl enable --now xrdp
+sudo ufw allow from any to any port 3389 proto tcp
+sudo adduser xrdp ssl-cert
 
 ## install software (medium) ##
-
 # pycharm
 sudo snap install pycharm-community --classic
 # todo manage preferences here?
