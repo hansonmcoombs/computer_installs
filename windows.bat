@@ -9,6 +9,4 @@ winget install --id manictime.manictime
 winget install --id bitwarden.bitwarden
 winget install --id 7zip.7zip
 winget install --id inkscape.inkscape
-
-:: todo
-:: ms office (if needed)
+winget install --id Microsoft.Office
