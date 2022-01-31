@@ -8,6 +8,8 @@ General linux notes
 
 # set windows key for menu map command: xfce4-popup-whiskermenu
 # set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
+# map ctrl + alt + delete to xfce4-taskmanager
+
 
 # curl
 sudo apt install curl
