@@ -1,4 +1,3 @@
- #todo check iy sll eotkdworks
 
 General linux notes
 # bluetooth microphone does not work well on linux, best practice is to use the webcam mic while at home...
@@ -54,9 +53,11 @@ sudo apt install git
 sudo apt install openssh-server
 sudo ufw allow ssh
 # to connect ssh username@ip_address
+
 # client: remmina
 sudo snap install remmina
-# server
+
+# server # todo not sorted!
 # x2go # todo follow up (did not get working)
 sudo apt-get install x2goserver x2goserver-xsession
 # rdp # todo follow up on ipv4/6 issue, I think this needs ipv6...
@@ -68,7 +69,7 @@ sudo adduser xrdp ssl-cert
 ## install software (medium) ##
 # pycharm
 sudo snap install pycharm-community --classic
-# todo manage preferences here?
+# preferences are in the admin
 
 # libre office
 # pre-installed on libreoffice sudo apt install libreoffice
@@ -95,16 +96,31 @@ snap install spotify
 # strechly
 sudo snap install stretchly
 
-# time tracker # todo https://alternativeto.net/software/manictime/?platform=linux???
-# look into activitywatch https://docs.activitywatch.net/en/latest/getting-started.html#usage
-# this is working pretty well, but does not allow selecting info, tagging and summary of tags 
-# I should be able to write something pretty quick for this though and other people would like it!
+# time tracker # Activity Watch
+# * https://activitywatch.net/
+# * unzip into home
+# * add ~/activitywatch/aw-qt to on start info
+# * clone aw-qt_manual-tag
+git clone git@github.com:hansonmcoombs/activitywatch_manual-tag.git ~/activitywatch_manual-tag
+conda conda env create --file ~/activitywatch_manual-tag/env.yml
+# * add menu item
+#    * settings -> menu editor --> add
+#    *  title: ActivityWatch Tag-Time
+#    *  Matt D taging time
+#    * /home/matt_dumont/miniconda3/bin/conda run -n aw_tag python /home/activitywatch_manual-tag/activity/watch_manual-tag
+# if you want to be fancy add the aw logo: /home/matt_dumont/activitywatch/aw-server/aw_server/static/static/logo.png
 
 
+# for update
+cd ~/activitywatch_manual-tag
+git fetch --all
+git reset --hard origin/main
+cd
 
 ## install software (heavy) ##
 
 # word??? # todo
+# remote into a windows machine
 
 # qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
 sudo apt install gnupg software-properties-common
