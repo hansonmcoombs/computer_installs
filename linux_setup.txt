@@ -67,6 +67,10 @@ sudo ufw allow from any to any port 3389 proto tcp
 sudo adduser xrdp ssl-cert
 
 ## install software (medium) ##
+#xournal (pdf viewer)
+
+sudo apt-get install xournal
+
 # pycharm
 sudo snap install pycharm-community --classic
 # preferences are in the admin
