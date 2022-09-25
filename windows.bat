@@ -15,3 +15,8 @@ winget install --id Microsoft.Office
 winget install -e --id tailscale.tailscale
 :: net user USER_NAME PASSWORD /add
 :: net localgroup administrators USER_ACCOUNT /add
+
+:: special installs for Bund  
+:: Feflow --> software_packages
+:: Stepmaster --> software_packages
+:: aqutesolv --> software_packages
