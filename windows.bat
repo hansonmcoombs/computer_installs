@@ -11,3 +11,5 @@ winget install --id 7zip.7zip
 winget install --id inkscape.inkscape
 winget install --id Microsoft.Office
 winget install -e --id tailscale.tailscale
+:: net user USER_NAME PASSWORD /add
+:: net localgroup administrators USER_ACCOUNT /add
