@@ -1,3 +1,5 @@
+:: run command prompt as admin
+
 winget install --force --id Google.Chrome
 winget install --id Google.Drive
 winget install --id OSGeo.QGIS_LTR
