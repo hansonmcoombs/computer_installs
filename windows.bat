@@ -10,6 +10,7 @@ winget install --id bitwarden.bitwarden
 winget install --id 7zip.7zip
 winget install --id inkscape.inkscape
 winget install -e --id tailscale.tailscale
+winget install --id TheDocumentFoundation.LibreOffice
 
 :: optional installs
 :: winget install --id Microsoft.Office  :: this will break feflow 7.2.5
