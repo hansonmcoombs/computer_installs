@@ -44,6 +44,10 @@ curl https://rclone.org/install.sh | sudo bash
 #tmux
 sudo apt install tmux
 
+# set some tmux options
+echo "set -g mouse on" >> ~/.tmux.conf
+echo "set -g history-limit 5000" >> ~/.tmux.conf
+
 # bitwarden
 sudo snap install bitwarden
 
