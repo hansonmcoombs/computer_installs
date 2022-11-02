@@ -10,6 +10,8 @@ General linux notes
 # map ctrl + alt + delete to xfce4-taskmanager
 
 
+
+
 # curl
 sudo apt install curl
 
@@ -53,6 +55,21 @@ sudo snap install bitwarden
 
 # git
 sudo apt install git
+
+cd ~
+git init
+git add ~/.bashrc
+git commit -m "Added .bashrc to version control"
+# Time goes by...
+# Time goes by...
+# echo "export FOO=bar" >> ~/.bashrc # Added a new line
+# git commit -am "Added FOO to .bashrc"
+# Time goes by...
+# echo "export SHEEP=lambs" > ~/.bashrc # Eeek! We've overwritten our file
+# Version control to the rescue
+# git checkout ~/.bashrc # file is restored
+# echo "export SHEEP=lambs" >> ~/.bashrc # Done correctly this time!
+# git commit -am "Added SHEEP to .bashrc"
 
 # remote desktop options
 # ssh
