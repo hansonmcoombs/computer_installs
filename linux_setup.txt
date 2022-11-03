@@ -114,6 +114,8 @@ sudo snap install zoom-client
 # teams (use in browser only with teams screenshare chrome extension
 
 
+# todo handle the matplotlib problem: https://komanawa.atlassian.net/wiki/spaces/PT/pages/1047232531/Python#Python-on-linux-challenges%3A
+
 # pycharm
 sudo snap install pycharm-community --classic
 
