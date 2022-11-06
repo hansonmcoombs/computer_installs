@@ -33,7 +33,9 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
 bash Miniconda3-py39_4.10.3-Linux-x86_64.sh
+source .bashrc
 conda config --prepend channels conda-forge
+#todo add global and local names
 
 
 # 7-zip
@@ -171,5 +173,9 @@ sudo apt install inkscape
 
 ## add to auto start
 # copy .desktop file to autostart dir or via the gui session and startup.
+
+# commit .bashrc
+cd ~
+git commit -m "finished normal installs"
 
 
