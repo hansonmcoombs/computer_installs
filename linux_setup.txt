@@ -96,6 +96,10 @@ sudo adduser xrdp ssl-cert
 
 sudo apt-get install xournal
 
+# pdf arranger
+sudo apt install pdfarranger
+
+
 # pycharm
 sudo snap install pycharm-community --classic
 # preferences are in the admin
