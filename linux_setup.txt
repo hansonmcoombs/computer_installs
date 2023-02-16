@@ -37,6 +37,9 @@ source .bashrc
 conda config --prepend channels conda-forge
 #todo add global and local names
 
+# smb client to connect to windows machines
+sudo apt install smbclient
+
 
 # 7-zip
 sudo apt-get install p7zip-full
