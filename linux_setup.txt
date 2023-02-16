@@ -39,6 +39,11 @@ conda config --prepend channels conda-forge
 
 # smb client to connect to windows machines
 sudo apt install smbclient
+sudo apt install cifs-utils
+
+# to mount
+# sudo mount -t cifs -o username=serverUserName //myServerIpAdress/sharename /mnt/myFolder/
+
 
 
 # 7-zip
