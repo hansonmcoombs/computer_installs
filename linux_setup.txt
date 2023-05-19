@@ -10,8 +10,6 @@ General linux notes
 
 sudo apt install htop
 
-
-
 # curl
 sudo apt install curl
 
@@ -22,17 +20,14 @@ sudo apt-get update
 sudo apt-get install tailscale
 # ~$ tailscale status to get list of tailscale ip addresses
 
-# notepadqq
-sudo apt-get update
-sudo apt install notepadqq
 
 # chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
-wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
-bash Miniconda3-py39_4.10.3-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
+bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
 source .bashrc
 conda config --prepend channels conda-forge
 #todo add global and local names
@@ -43,8 +38,6 @@ sudo apt install cifs-utils
 
 # to mount
 # sudo mount -t cifs -o username=serverUserName //myServerIpAdress/sharename /mnt/myFolder/
-
-
 
 # 7-zip
 sudo apt-get install p7zip-full
@@ -118,18 +111,11 @@ sudo snap install pycharm-community --classic
 # libre office
 # pre-installed on libreoffice sudo apt install libreoffice
 
-# screen recording tool
-sudo wget -q -O - https://screenrec.com/download/pub.asc | sudo apt-key add -
-sudo add-apt-repository 'deb https://screenrec.com/download/ubuntu stable main'
-sudo apt update
-sudo apt install screenrec
-
 # zoom
 sudo apt-get update
 sudo snap install zoom-client
 
 # teams (use in browser only with teams screenshare chrome extension
-
 
 # todo handle the matplotlib problem: https://komanawa.atlassian.net/wiki/spaces/PT/pages/1047232531/Python#Python-on-linux-challenges%3A
 
@@ -165,8 +151,9 @@ cd
 
 ## install software (heavy) ##
 
-# word??? # todo
-# remote into a windows machine
+# word and other ms office
+# remote into a windows machine via winapps
+# https://github.com/Fmstrat/winapps
 
 # qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
 sudo apt install gnupg software-properties-common
