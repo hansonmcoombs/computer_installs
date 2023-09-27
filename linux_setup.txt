@@ -53,6 +53,32 @@ sudo apt install tmux
 echo "set -g mouse on" >> ~/.tmux.conf
 echo "set -g history-limit 5000" >> ~/.tmux.conf
 
+# tmux logging 
+git clone https://github.com/tmux-plugins/tmux-logging ~/.tmux/tmux-logging'
+echo "run-shell ~/.tmux/tmux-logging/logging.tmux" >> ~/.tmux.conf
+
+# hack to auto log
+nano ~/.tmux/tmux-logging/scripts/variables.sh
+# todo filename_suffix="#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log" --> filename_suffix="#{session_name}-#{window_index}-#{pane_index}.log"
+cp  ~/.tmux/tmux-logging/scripts/toggle_logging.sh ~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh
+nano  ~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh
+# todo change to
+# toggle_pipe_pane() {
+#        if is_logging; then
+#                echo 'already logging'
+#                # set_logging_variable "not logging"
+#                # stop_pipe_pane
+#        else
+#                set_logging_variable "logging"
+#                start_pipe_pane
+#        fi
+# }
+chmod +x  ~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh
+echo "~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh" >> ~/.bashrc
+# todo set so that it runs on ssh --> tmux
+
+
+
 # bitwarden
 sudo snap install bitwarden
 
