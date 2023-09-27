@@ -39,6 +39,7 @@ sudo apt install cifs-utils
 # to mount
 # sudo mount -t cifs -o username=serverUserName //myServerIpAdress/sharename /mnt/myFolder/
 
+
 # 7-zip
 sudo apt-get install p7zip-full
 
