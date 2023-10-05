@@ -47,6 +47,9 @@ sudo apt-get install p7zip-full
 sudo apt install curl
 curl https://rclone.org/install.sh | sudo bash
 
+# git
+sudo apt install git
+
 #tmux
 sudo apt install tmux
 
@@ -55,7 +58,7 @@ echo "set -g mouse on" >> ~/.tmux.conf
 echo "set -g history-limit 5000" >> ~/.tmux.conf
 
 # tmux logging 
-git clone https://github.com/tmux-plugins/tmux-logging ~/.tmux/tmux-logging'
+git clone https://github.com/tmux-plugins/tmux-logging ~/.tmux/tmux-logging
 echo "run-shell ~/.tmux/tmux-logging/logging.tmux" >> ~/.tmux.conf
 
 # hack to auto log
@@ -66,7 +69,7 @@ nano  ~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh
 # todo change to
 # toggle_pipe_pane() {
 #        if is_logging; then
-#                echo 'already logging'
+#                echo 'tmux already logging'
 #                # set_logging_variable "not logging"
 #                # stop_pipe_pane
 #        else
@@ -83,8 +86,7 @@ echo "~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh" >> ~/.bashrc
 # bitwarden
 sudo snap install bitwarden
 
-# git
-sudo apt install git
+
 
 cd ~
 git init
