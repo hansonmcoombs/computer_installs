@@ -26,8 +26,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
-wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
-bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 source .bashrc
 conda config --prepend channels conda-forge
 #todo add global and local names
@@ -112,6 +112,11 @@ sudo ufw allow ssh
 # client: remmina
 sudo snap install remmina
 
+# or
+sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+sudo apt update
+sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
+
 # server # todo not sorted!
 # x2go # todo follow up (did not get working)
 sudo apt-get install x2goserver x2goserver-xsession
@@ -140,7 +145,7 @@ sudo apt-get install flameshot
 
 
 # pycharm
-sudo snap install pycharm-community --classic
+sudo snap install pycharm-community --classic # todo not in base
 # preferences are in the admin
 
 # libre office
@@ -148,20 +153,20 @@ sudo snap install pycharm-community --classic
 
 # zoom
 sudo apt-get update
-sudo snap install zoom-client
+sudo snap install zoom-client  # todo not in base
 
 # teams (use in browser only with teams screenshare chrome extension
 
-# todo handle the matplotlib problem: https://komanawa.atlassian.net/wiki/spaces/PT/pages/1047232531/Python#Python-on-linux-challenges%3A
+# todo handle the matplotlib problem: https://komanawa.atlassian.net/wiki/spaces/PT/pages/1047232531/Python#Python-on-linux-challenges%3A # todo not in base
 
 # pycharm
-sudo snap install pycharm-community --classic
+sudo snap install pycharm-community --classic # todo not in base
 
 # spotify
-snap install spotify
+snap install spotify # todo not in base
 
 # strechly
-sudo snap install stretchly
+sudo snap install stretchly # todo not in base
 
 # time tracker # Activity Watch
 # * https://activitywatch.net/
@@ -186,15 +191,15 @@ cd
 
 ## install software (heavy) ##
 
-# word and other ms office
+# word and other ms office # todo not in base
 # remote into a windows machine via winapps
 # https://github.com/Fmstrat/winapps
 
+
 # qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
 sudo apt install gnupg software-properties-common
-wget -qO - https://qgis.org/downloads/qgis-2021.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
-sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
-sudo add-apt-repository "deb https://qgis.org/ubuntu $(lsb_release -c -s) main"
+sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
+sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 sudo apt update
 sudo apt install qgis qgis-plugin-grass
 
