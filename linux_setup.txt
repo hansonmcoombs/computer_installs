@@ -25,7 +25,7 @@ sudo apt-get install tailscale
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
+# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers # todo not included in installs
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source .bashrc
@@ -57,7 +57,7 @@ sudo apt install tmux
 echo "set -g mouse on" >> ~/.tmux.conf
 echo "set -g history-limit 5000" >> ~/.tmux.conf
 
-# tmux logging 
+# tmux logging # todo not included in installs
 git clone https://github.com/tmux-plugins/tmux-logging ~/.tmux/tmux-logging
 echo "run-shell ~/.tmux/tmux-logging/logging.tmux" >> ~/.tmux.conf
 
@@ -109,7 +109,7 @@ sudo apt install openssh-server
 sudo ufw allow ssh
 # to connect ssh username@ip_address
 
-# client: remmina
+# client: remmina 
 sudo snap install remmina
 
 # or
@@ -131,7 +131,7 @@ sudo adduser xrdp ssl-cert
 # faster image viewer
 sudo add-apt-repository ppa:easymodo/qimgv
 sudo apt update
-sudo apt install qimgv
+sudo apt install qimgv  # todo set default app
 
 #xournal (pdf viewer)
 
