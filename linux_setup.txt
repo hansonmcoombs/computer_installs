@@ -10,6 +10,9 @@ General linux notes
 
 sudo apt install htop
 
+# sensors to check cpu temp etc.
+sudo apt-get install lm-sensors # todo add to ISO
+
 # curl
 sudo apt install curl
 

@@ -1,0 +1,80 @@
+# from cubic
+
+# htop
+sudo apt install htop
+
+# sensors to check cpu temp etc.
+sudo apt-get install lm-sensors # todo add to ISO
+
+# curl
+sudo apt install curl
+
+# tailscale
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+sudo apt-get update
+sudo apt-get install tailscale
+
+# chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+# smb client to connect to windows machines
+sudo apt install smbclient
+sudo apt install cifs-utils
+
+# 7-zip
+sudo apt-get install p7zip-full
+
+# rclone
+sudo apt install curl
+curl https://rclone.org/install.sh | sudo bash
+
+# git
+sudo apt install git
+
+#tmux
+sudo apt install tmux
+
+# ssh
+sudo apt install openssh-server
+sudo ufw allow ssh
+
+# client remote desktop (remmina)
+sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+sudo apt update
+sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
+
+# todo server remote desktop
+
+# faster image viewer
+sudo add-apt-repository ppa:easymodo/qimgv
+sudo apt update
+sudo apt install qimgv
+
+#xournal (pdf viewer)
+
+sudo apt-get install xournal
+
+# pdf arranger
+sudo apt install pdfarranger
+
+# flameshot screen capture
+sudo apt-get install flameshot
+
+# libre office
+sudo apt install libreoffice
+
+# qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
+sudo apt install gnupg software-properties-common
+sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
+sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
+sudo apt update
+sudo apt install qgis qgis-plugin-grass
+
+# inkscape
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt-get update
+sudo apt install inkscape
+
