@@ -11,7 +11,7 @@ General linux notes
 sudo apt install htop
 
 # sensors to check cpu temp etc.
-sudo apt-get install lm-sensors # todo add to ISO
+sudo apt-get install lm-sensors
 
 # curl
 sudo apt install curl
@@ -28,7 +28,7 @@ sudo apt-get install tailscale
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers # todo not included in installs
+# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source .bashrc
@@ -60,7 +60,7 @@ sudo apt install tmux
 echo "set -g mouse on" >> ~/.tmux.conf
 echo "set -g history-limit 5000" >> ~/.tmux.conf
 
-# tmux logging # todo not included in installs
+# tmux logging
 git clone https://github.com/tmux-plugins/tmux-logging ~/.tmux/tmux-logging
 echo "run-shell ~/.tmux/tmux-logging/logging.tmux" >> ~/.tmux.conf
 
@@ -120,21 +120,19 @@ sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 
-# server # todo not sorted!
-# x2go # todo follow up (did not get working)
-sudo apt-get install x2goserver x2goserver-xsession
-# rdp # todo follow up on ipv4/6 issue, I think this needs ipv6...
+# server
 sudo apt install xrdp
 sudo systemctl enable --now xrdp
-sudo ufw allow from any to any port 3389 proto tcp
-sudo adduser xrdp ssl-cert
+echo "xfce4-session" | tee .xsession
+sudo systemctl restart xrdp
+sudo ufw allow from any to any port 3389
 
 ## install software (medium) ##
 
 # faster image viewer
 sudo add-apt-repository ppa:easymodo/qimgv
 sudo apt update
-sudo apt install qimgv  # todo set default app
+sudo apt install qimgv
 
 #xournal (pdf viewer)
 
@@ -148,7 +146,7 @@ sudo apt-get install flameshot
 
 
 # pycharm
-sudo snap install pycharm-community --classic # todo not in base
+sudo snap install pycharm-community --classic
 # preferences are in the admin
 
 # libre office
@@ -156,20 +154,18 @@ sudo snap install pycharm-community --classic # todo not in base
 
 # zoom
 sudo apt-get update
-sudo snap install zoom-client  # todo not in base
+sudo snap install zoom-client
 
 # teams (use in browser only with teams screenshare chrome extension
 
-# todo handle the matplotlib problem: https://komanawa.atlassian.net/wiki/spaces/PT/pages/1047232531/Python#Python-on-linux-challenges%3A # todo not in base
-
 # pycharm
-sudo snap install pycharm-community --classic # todo not in base
+sudo snap install pycharm-community --classic
 
 # spotify
-snap install spotify # todo not in base
+snap install spotify
 
 # strechly
-sudo snap install stretchly # todo not in base
+sudo snap install stretchly
 
 # time tracker # Activity Watch
 # * https://activitywatch.net/
@@ -194,7 +190,7 @@ cd
 
 ## install software (heavy) ##
 
-# word and other ms office # todo not in base
+# word and other ms office
 # remote into a windows machine via winapps
 # https://github.com/Fmstrat/winapps
 

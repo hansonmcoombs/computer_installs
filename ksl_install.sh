@@ -21,26 +21,13 @@ source .bashrc
 conda config --prepend channels conda-forge
 
 # pycharm
-sudo snap install pycharm-community --classic
+sudo snap install -y pycharm-community --classic
 # zoom
-sudo snap install zoom-client
+sudo snap install -y zoom-client
 
-### Config Options ###
-# change default programs #
-# todo qimgv --> for images
-
-# todo add to auto start
-# flame shot
-
-# todo configure panel to match mine
-#
-
-#  todo keyboard Shortcuts
-# set shortcut for xflock4 to ctrl+alt+shift+l (to allow pycharm refactor)
-# map ctrl + alt + delete to xfce4-taskmanager
-# todo shortcut for pasting from selection clipboard
-
-
+git clone https://github.com/wilicc/gpu-burn
+cd gpu-burn
+make
 
 # set tmux config
 echo "set -g mouse on" >> ~/.tmux.conf

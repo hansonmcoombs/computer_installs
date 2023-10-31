@@ -1,10 +1,14 @@
 # from cubic
 
+sudo apt-get update
+sudo apt-get upgrade
+
 # htop
 sudo apt install htop
 
 # sensors to check cpu temp etc.
 sudo apt-get install lm-sensors # todo add to ISO
+sudo apt-get install stress htop iotop lm-sensors # todo add to ISO
 
 # curl
 sudo apt install curl
@@ -45,7 +49,8 @@ sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 
-# todo server remote desktop
+# server remote desktop
+sudo apt install xrdp # todo add to ISO
 
 # faster image viewer
 sudo add-apt-repository ppa:easymodo/qimgv
