@@ -82,7 +82,7 @@ nano  ~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh
 # }
 chmod +x  ~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh
 echo "~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh" >> ~/.bashrc
-# todo set so that it runs on ssh --> tmux
+# todo set so that it runs on ssh --> tmux, better to source .bashrc on ssh login
 
 
 
