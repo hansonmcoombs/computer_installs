@@ -1,7 +1,7 @@
 
-# before running set:
-# gitname =
-# gitemail =
+# positonal args :
+gitname=$1
+gitemail=$2
 
 echo "Starting installs"
 echo "parameters:"
