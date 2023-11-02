@@ -1,6 +1,6 @@
 :: run command prompt as admin
 winget install --force --id Google.Chrome
-winget install --id Google.Drive
+winget install -e --id Google.Drive
 winget install --id OSGeo.QGIS_LTR
 winget install --id Anaconda.Miniconda3
 winget install --id Notepad++.Notepad++
