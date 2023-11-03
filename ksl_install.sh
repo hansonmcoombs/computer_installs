@@ -17,6 +17,9 @@ sudo apt upgrade
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
+
+sleep 10
+
 source ~/.bashrc
 conda config --prepend channels conda-forge
 
@@ -25,9 +28,13 @@ sudo snap install pycharm-community --classic
 # zoom
 sudo snap install zoom-client
 
-git clone https://github.com/wilicc/gpu-burn ~/gpu_burn
-cd ~/gpu-burn
-make
+# install modflow
+cd "$(dirname "$0")"
+bash support_files/install_modflow.sh
+
+# install and compile pest
+bash support_files/compile_pest.sh
+
 
 # set tmux config
 echo "set -g mouse on" >> ~/.tmux.conf
@@ -49,7 +56,7 @@ echo "run-shell ~/.tmux/tmux-logging/logging.tmux" >> ~/.tmux.conf
 
 # hack to auto log
 # ensure wd is correct
-cd cd "$(dirname "$0")"
+cd "$(dirname "$0")"
 cp support_files/variables.sh ~/.tmux/tmux-logging/scripts/variables.sh
 # change: filename_suffix="#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log" --> filename_suffix="#{session_name}-#{window_index}-#{pane_index}.log"
 
@@ -72,6 +79,7 @@ echo "~/.tmux/tmux-logging/scripts/.ensure_tmux_logging_on.sh" >> ~/.bashrc
 source ~/.bashrc
 
 # handle the matplotlib problem: https://komanawa.atlassian.net/wiki/spaces/PT/pages/1047232531/Python#Python-on-linux-challenges%3A
+mkdir ~/.config/matplotlib
 echo "backend: TkAgg" >> ~/.config/matplotlib/matplotlibrc
 
 # commit .bashrc as git

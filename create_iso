@@ -44,6 +44,13 @@ sudo apt install tmux
 sudo apt install openssh-server
 sudo ufw allow ssh
 
+# stuff for compiling pest
+sudo apt-get install gfortran
+sudo apt-get install make
+
+# make
+sudo apt install make
+
 # client remote desktop (remmina)
 sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt update
