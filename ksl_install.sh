@@ -17,16 +17,16 @@ sudo apt upgrade
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
-source .bashrc
+source ~/.bashrc
 conda config --prepend channels conda-forge
 
 # pycharm
-sudo snap install -y pycharm-community --classic
+sudo snap install pycharm-community --classic
 # zoom
-sudo snap install -y zoom-client
+sudo snap install zoom-client
 
-git clone https://github.com/wilicc/gpu-burn
-cd gpu-burn
+git clone https://github.com/wilicc/gpu-burn ~/gpu_burn
+cd ~/gpu-burn
 make
 
 # set tmux config
@@ -77,3 +77,5 @@ echo "backend: TkAgg" >> ~/.config/matplotlib/matplotlibrc
 # commit .bashrc as git
 cd ~
 git commit -m "finished normal installs"
+
+echo "Finished installs"
