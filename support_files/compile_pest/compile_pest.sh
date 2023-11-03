@@ -2,13 +2,14 @@
 # new limits were set to 300 characters, max characters is 77 in a single line
 # pest was run on ubuntu (xubuntu) 22.04
 
-# todo gfortran-9 does not allow, -fallow-argument-mismatch, fix this...? (or modflow in 22.04)
+# note gfortran-9 does not allow, -fallow-argument-mismatch, fix this...? (or modflow in 22.04)
 #  manually remove from:
 #     * beopest.mak
 #     * pestutl5.mak
 
 
-cd "${0%/*}"
+cd "$(dirname "$0")"
+echo "$(dirname "$0")"
 pest_dir='/pest'
 base_tar="./pest17_mod.tar"
 

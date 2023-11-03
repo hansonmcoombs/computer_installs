@@ -33,7 +33,7 @@ cd "$(dirname "$0")"
 bash support_files/install_modflow.sh
 
 # install and compile pest
-bash support_files/compile_pest.sh
+bash support_files/compile_pest/compile_pest.sh
 
 
 # set tmux config
