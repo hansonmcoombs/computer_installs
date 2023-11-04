@@ -1,6 +1,6 @@
 :: run command prompt as admin
 winget install --force --id Google.Chrome
-winget install -e --id Google.Drive
+winget install -e --id=Google.GoogleDrive
 winget install --id OSGeo.QGIS_LTR
 winget install --id Anaconda.Miniconda3
 winget install --id Notepad++.Notepad++
@@ -11,6 +11,7 @@ winget install --id 7zip.7zip
 winget install --id inkscape.inkscape
 winget install -e --id tailscale.tailscale
 winget install --id TheDocumentFoundation.LibreOffice
+winget install --id=DigitalScholar.Zotero  -e
 
 :: optional installs
 :: winget install --id Microsoft.Office  :: this will break feflow 7.2.5

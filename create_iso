@@ -57,6 +57,9 @@ sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 # server remote desktop
 sudo apt install xrdp
 
+# support for winapps
+sudo apt-get install -y freerdp2-x11
+
 # faster image viewer
 sudo add-apt-repository ppa:easymodo/qimgv
 sudo apt update
