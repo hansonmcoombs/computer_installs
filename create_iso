@@ -94,3 +94,5 @@ sudo add-apt-repository ppa:inkscape.dev/stable
 sudo apt-get update
 sudo apt install inkscape
 
+# support for pyqt6
+sudo apt install libxcb-cursor0
