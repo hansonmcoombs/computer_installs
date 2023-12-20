@@ -78,6 +78,9 @@ sudo apt install pdfarranger
 # Okular (pdf viewer) #todo add to ISO
 sudo apt install okular
 
+# Latex  # todo add to ISO
+sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
 # flameshot screen capture
 sudo apt-get install flameshot
 
