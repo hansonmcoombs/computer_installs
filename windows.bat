@@ -6,6 +6,8 @@ winget install --id Anaconda.Miniconda3
 winget install --id Notepad++.Notepad++
 winget install --id git.git
 winget install --id jetbrains.pycharm.community
+winget install -e --id SumatraPDF.SumatraPDF
+winget install --id=MiKTeX.MiKTeX  -e
 winget install --id bitwarden.bitwarden
 winget install --id 7zip.7zip
 winget install --id inkscape.inkscape
