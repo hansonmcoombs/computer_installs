@@ -55,8 +55,8 @@ echo "run-shell ~/.tmux/tmux-logging/logging.tmux" >> ~/.tmux.conf
 
 # hack to auto log
 # ensure wd is correct
-cd "$(dirname "$0")"
-echo "changing cd to $(dirname "$0")"
+cd "$(dirname $(realpath "$0"))"
+echo "changing cd to "$(dirname $(realpath "$0"))""
 cp support_files/variables.sh ~/.tmux/tmux-logging/scripts/variables.sh
 # change: filename_suffix="#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log" --> filename_suffix="#{session_name}-#{window_index}-#{pane_index}.log"
 
