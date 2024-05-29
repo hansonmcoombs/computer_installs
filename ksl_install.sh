@@ -12,6 +12,7 @@ echo "gitemail: $gitemail"
 # update and upgrade
 sudo apt update
 sudo apt upgrade
+sudo apt install openssh-server
 
 # Install  #
 # miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
