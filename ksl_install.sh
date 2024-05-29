@@ -26,6 +26,11 @@ conda config --prepend channels conda-forge
 
 # pycharm
 sudo snap install pycharm-community --classic
+sudo snap install pycharm-professional --classic
+
+# draw.io
+sudo snap install drawio
+
 # zoom
 sudo snap install zoom-client
 
