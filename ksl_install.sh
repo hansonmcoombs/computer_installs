@@ -93,4 +93,10 @@ echo "backend: TkAgg" >> ~/.config/matplotlib/matplotlibrc
 cd ~
 git commit -m "finished normal installs"
 
+# install Zotero
+wget -qO- https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
+sudo apt update
+sudo apt install zotero
+
+
 echo "Finished installs"
