@@ -75,11 +75,14 @@ sudo apt-get install xournal
 # pdf arranger
 sudo apt install pdfarranger
 
-# Okular (pdf viewer) #todo add to ISO
+# Okular (pdf viewer)
 sudo apt install okular
 
-# Latex  # todo add to ISO
+# Latex
 sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+# pandoc
+sudo apt-get install pandoc 
 
 # flameshot screen capture
 sudo apt-get install flameshot
