@@ -87,6 +87,10 @@ sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-
 # pandoc
 sudo apt-get install pandoc 
 
+# latexmk (Pdfs from sphinx docs)
+sudo apt install latexmk
+
+
 # flameshot screen capture
 sudo apt-get install flameshot
 
