@@ -3,6 +3,10 @@
 sudo apt-get update
 sudo apt-get upgrade
 
+
+# unzip
+sudo apt install unzip
+
 # htop
 sudo apt install htop
 
