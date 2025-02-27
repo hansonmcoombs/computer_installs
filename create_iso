@@ -86,7 +86,12 @@ sudo apt install pdfarranger
 sudo apt install okular
 
 # Latex
-sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-publishers
+sudo apt-get install texlive-latex-base 
+sudo apt-get install texlive-fonts-recommended 
+sudo apt-get install texlive-fonts-extra 
+sudo apt-get install texlive-latex-extra
+sudo apt-get install texlive-publishers
+
 
 # pandoc
 sudo apt-get install pandoc 
