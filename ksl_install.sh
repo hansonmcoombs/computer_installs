@@ -19,7 +19,7 @@ sudo apt install openssh-server
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 
-sleep 10
+sleep 10 #todo split here
 
 source ~/.bashrc
 conda config --prepend channels conda-forge
