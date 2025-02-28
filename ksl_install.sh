@@ -8,18 +8,11 @@ echo "parameters:"
 echo "gitname: $gitname"
 echo "gitemail: $gitemail"
 
-
 # update and upgrade
 sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server
 
-# Install  #
-# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-
-sleep 10 #todo split here
 
 source ~/.bashrc
 conda config --prepend channels conda-forge

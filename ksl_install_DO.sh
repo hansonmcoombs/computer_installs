@@ -13,13 +13,6 @@ echo "gitemail: $gitemail"
 sudo apt update
 sudo apt upgrade
 
-# Install  #
-# miniconda check version here: https://docs.conda.io/en/latest/miniconda.html#linux-installers
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-
-sleep 10
-
 source ~/.bashrc
 conda config --prepend channels conda-forge
 
