@@ -1,0 +1,2 @@
+latexpand version v1.7.2 (4a76237c217a532a77044c0346b1e06648814531).
+Committed on Mon Feb 27 09:52:54 2023 +0100.

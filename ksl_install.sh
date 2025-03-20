@@ -34,6 +34,15 @@ bash support_files/install_modflow.sh
 # install and compile pest
 bash support_files/compile_pest/compile_pest.sh
 
+# install latexexpand
+mkdir -p ~/.local
+mkdir -p ~/.local/bin
+
+cp support_files/latexpand/* ~/.local/bin/
+chmod 770 ~/.local/bin/latexpand
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
+
+
 
 # set tmux config
 echo "set -g mouse on" >> ~/.tmux.conf
