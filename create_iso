@@ -59,7 +59,7 @@ sudo apt-get -y install make
 
 
 # client remote desktop (remmina)
-sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+sudo apt-add-repository -y ppa:remmina-ppa-team/remmina-next
 sudo apt -y update
 sudo apt -y install remmina remmina-plugin-rdp remmina-plugin-secret
 
@@ -70,7 +70,7 @@ sudo apt -y install xrdp
 sudo apt-get -y install -y freerdp2-x11
 
 # faster image viewer
-sudo add-apt-repository ppa:easymodo/qimgv
+sudo add-apt-repository -y ppa:easymodo/qimgv
 sudo apt -y update
 sudo apt -y install qimgv
 
@@ -114,8 +114,8 @@ sudo apt -y update
 sudo apt -y install qgis qgis-plugin-grass
 
 # inkscape
-sudo add-apt-repository universe
-sudo add-apt-repository ppa:inkscape.dev/stable
+sudo add-apt-repository  -y universe
+sudo add-apt-repository  -y ppa:inkscape.dev/stable
 sudo apt-get -y  update
 sudo apt -y install inkscape
 
