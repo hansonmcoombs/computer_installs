@@ -1,92 +1,91 @@
 # from cubic
 
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 
 # unzip
-sudo apt install unzip
+sudo apt -y install unzip
 
 # htop
-sudo apt install htop
+sudo apt -y install htop
 
 # sensors to check cpu temp etc.
-sudo apt-get install lm-sensors
-sudo apt-get install stress htop iotop lm-sensors
+sudo apt-get -y install lm-sensors
+sudo apt-get -y install stress htop iotop lm-sensors
 
 # curl
-sudo apt install curl
+sudo apt -y install curl
 
 # gparted
-sudo apt install gparted
+sudo apt -y install gparted
 
 # tailscale
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
-sudo apt-get update
-sudo apt-get install tailscale
+sudo apt-get -y update
+sudo apt-get -y install tailscale
 
 #xclip
-sudo apt-get install xclip
+sudo apt-get -y install xclip
 
 # chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # smb client to connect to windows machines
-sudo apt install smbclient
-sudo apt install cifs-utils
+sudo apt -y install smbclient
+sudo apt -y install cifs-utils
 
 # 7-zip
-sudo apt-get install p7zip-full
+sudo apt-get install -y p7zip-full
 
 # rclone
-sudo apt install curl
 curl https://rclone.org/install.sh | sudo bash
 
 # git
-sudo apt install git
+sudo apt -y install git
 
 #tmux
-sudo apt install tmux
+sudo apt -y install tmux
 
 # ssh
-sudo apt install openssh-server
+sudo apt -y install openssh-server
 sudo ufw allow ssh
 
 # stuff for compiling pest
-sudo apt-get install gfortran
-sudo apt-get install make
+sudo apt-get -y install gfortran
+sudo apt-get -y install make
 
 
 # client remote desktop (remmina)
 sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
-sudo apt update
-sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
+sudo apt -y update
+sudo apt -y install remmina remmina-plugin-rdp remmina-plugin-secret
 
 # server remote desktop
-sudo apt install xrdp
+sudo apt -y install xrdp
 
 # support for winapps
-sudo apt-get install -y freerdp2-x11
+sudo apt-get -y install -y freerdp2-x11
 
 # faster image viewer
 sudo add-apt-repository ppa:easymodo/qimgv
-sudo apt update
-sudo apt install qimgv
+sudo apt -y update
+sudo apt -y install qimgv
 
 #xournal (pdf viewer)
 
-sudo apt-get install xournal
+sudo apt-get -y install xournal
 
 # pdf arranger
-sudo apt install pdfarranger
+sudo apt -y install pdfarranger
 
 # Okular (pdf viewer)
-sudo apt install okular
+sudo apt -y install okular
 
 # Latex
-sudo apt-get install texlive-full
+sudo apt-get -y install texlive-full
 # sudo apt-get install texlive-latex-base 
 # sudo apt-get install texlive-fonts-recommended 
 # sudo apt-get install texlive-fonts-extra 
@@ -95,31 +94,31 @@ sudo apt-get install texlive-full
 
 
 # pandoc
-sudo apt-get install pandoc 
+sudo apt-get -y install pandoc 
 
 # latexmk (Pdfs from sphinx docs)
-sudo apt install latexmk
+sudo apt -y install latexmk
 
 
 # flameshot screen capture
-sudo apt-get install flameshot
+sudo apt-get -y install flameshot
 
 # libre office
-sudo apt install libreoffice
+sudo apt -y install libreoffice
 
 # qgis # check version here: https://www.qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
 sudo apt install gnupg software-properties-common
 # sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
 # sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
-sudo apt update
-sudo apt install qgis qgis-plugin-grass
+sudo apt -y update
+sudo apt -y install qgis qgis-plugin-grass
 
 # inkscape
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:inkscape.dev/stable
-sudo apt-get update
-sudo apt install inkscape
+sudo apt-get -y  update
+sudo apt -y install inkscape
 
 # support for pyqt6
-sudo apt install libxcb-cursor0
+sudo apt -y install libxcb-cursor0
 
