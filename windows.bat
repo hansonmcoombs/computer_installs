@@ -7,6 +7,7 @@ winget install --id Notepad++.Notepad++
 winget install --id git.git
 winget install --id jetbrains.pycharm.community
 winget install -e --id SumatraPDF.SumatraPDF
+winget install -e --id StrawberryPerl.StrawberryPerl
 winget install --id=MiKTeX.MiKTeX  -e
 winget install --id bitwarden.bitwarden
 winget install --id 7zip.7zip
